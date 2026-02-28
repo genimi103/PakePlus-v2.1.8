@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>帆书声声智能听书机官网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="帆书声声智能听书机官网，樊登讲书+AI交互，无屏听书，24小时知识陪伴。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <div class="logo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+          <img src="./logo.png" alt="帆书声声" class="logo-image" />
+        </div>
+        <nav class="nav-actions">
+          <button class="btn btn-primary nav-cta" data-scroll-target="#experience">
+            加入体验计划
+          </button>
+          <div class="nav-contact-wrapper">
+            <button
+              class="btn btn-outline nav-contact"
+              id="nav-contact-button"
+              data-scroll-target="#contact"
+            >
+              联系我们
+            </button>
+            <div class="nav-contact-qr" id="nav-contact-qr" aria-hidden="true">
+              <div class="nav-contact-qr-inner">
+                <img src="./contact_us.jpg" alt="扫码关注小程序" />
+                <p>扫码关注小程序</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- 首屏 Banner -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1 id="hero-title">樊登讲书 轻松成长</h1>
+            <p class="hero-subtitle">
+              AI陪伴，无屏听书，24小时知识陪伴。专为全年龄段打造的智能听书机，让每一次聆听都更专注、更安心。
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-scroll-target="#experience">
+                加入体验计划
+              </button>
+              <button class="btn btn-ghost" data-scroll-target="#colors">
+                了解国风配色
+              </button>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- 国风雅色展示区 -->
+      <section class="section section-light" id="colors" aria-labelledby="colors-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="colors-title">三款国风陶瓷配色，文化触手可及</h2>
+            <p class="section-subtitle">
+              灵感源于千年名窑，每一款都是国风雅器
+            </p>
+          </div>
+
+          <div class="color-grid" data-interactive-group>
+            <!-- 国礼瓷黄 -->
+            <article
+              class="color-card color-card--yellow"
+              data-color-card
+              aria-label="国礼瓷黄"
+            >
+              <div class="color-card-inner">
+                <div class="color-card-bg-pattern"></div>
+                <div class="color-card-border"></div>
+                <div class="color-card-content">
+                  <div class="color-card-text-vertical">
+                    <span>国礼瓷黄</span>
+                    <span>典雅庄重</span>
+                  </div>
+                  <div class="color-card-visual">
+                    <img
+                      src="./yellow.png"
+                      alt="国礼瓷黄配色产品展示"
+                      class="color-product-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 汝窑天青 -->
+            <article
+              class="color-card color-card--blue"
+              data-color-card
+              aria-label="汝窑天青"
+            >
+              <div class="color-card-inner">
+                <div class="color-card-bg-pattern"></div>
+                <div class="color-card-border"></div>
+                <div class="color-card-content">
+                  <div class="color-card-text-vertical">
+                    <span>汝窑天青</span>
+                    <span>清雅静心</span>
+                  </div>
+                  <div class="color-card-visual">
+                    <img
+                      src="./qingse.png"
+                      alt="汝窑天青配色产品展示"
+                      class="color-product-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 定窑瓷白 -->
+            <article
+              class="color-card color-card--white"
+              data-color-card
+              aria-label="定窑瓷白"
+            >
+              <div class="color-card-inner">
+                <div class="color-card-bg-pattern"></div>
+                <div class="color-card-border"></div>
+                <div class="color-card-content">
+                  <div class="color-card-text-vertical">
+                    <span>定窑瓷白</span>
+                    <span>素雅纯澈</span>
+                  </div>
+                  <div class="color-card-visual">
+                    <img
+                      src="./bai.png"
+                      alt="定窑瓷白配色产品展示"
+                      class="color-product-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 产品介绍区 -->
+      <section class="section" id="product" aria-labelledby="product-title">
+        <div class="container product-layout">
+          <div class="product-visual" aria-hidden="true">
+            <div class="product-slider" id="product-slider">
+              <div class="product-slide is-active" data-product-slide>
+                <img src="./product-1.png" alt="帆书声声产品展示 1" />
+              </div>
+              <div class="product-slide" data-product-slide>
+                <img src="./product-2.png" alt="帆书声声产品展示 2" />
+              </div>
+              <div class="product-slide" data-product-slide>
+                <img src="./product-3.png" alt="帆书声声产品展示 3" />
+              </div>
+              <div class="product-slide" data-product-slide>
+                <img src="./product-4.png" alt="帆书声声产品展示 4" />
+              </div>
+              <div class="product-slide" data-product-slide>
+                <img src="./product-5.png" alt="帆书声声产品展示 5" />
+              </div>
+              <div class="product-dots" id="product-dots" aria-hidden="true">
+                <button class="product-dot is-active" type="button"></button>
+                <button class="product-dot" type="button"></button>
+                <button class="product-dot" type="button"></button>
+                <button class="product-dot" type="button"></button>
+                <button class="product-dot" type="button"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-content">
+            <h2 id="product-title">产品介绍</h2>
+            <p class="product-intro">
+              专为全年龄段打造的 AI 听书硬件，以书形设计承载海量知识，用无屏交互解放双眼，实现“樊登讲书
+              + AI 交互”的双重体验。
+            </p>
+            <ul class="product-highlights">
+              <li>
+                <h3>书形设计藏心意</h3>
+                <p>
+                  开合即刻启动，听书更有仪式感。机身轻薄便携，适配多场景握持，让每一次翻开都是一场新的知识旅程。
+                </p>
+              </li>
+              <li>
+                <h3>脱离手机更专注</h3>
+                <p>
+                  无需解锁手机、无需翻找 APP，开机即听樊登讲书，远离信息打扰，在专注聆听中沉浸思考。
+                </p>
+              </li>
+              <li>
+                <h3>全龄适配更贴心</h3>
+                <p>
+                  操作极简，老人小孩轻松上手，全家共享知识陪伴，让客厅、书房、卧室都成为充满故事的角落。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 功能亮点区 -->
+      <section class="section section-light" id="features" aria-labelledby="features-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="features-title">核心功能 实力出圈</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>樊登声线交互</h3>
+              <p>
+                搭载樊登专属 AI 模型，用樊登声线对话、答疑、推荐书籍；支持连续语音交互，可围绕书籍内容追问、复盘、延伸，打造“专属知识伙伴”体验。
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>无屏语言交互</h3>
+              <p>
+                纯语音推荐 + 点播，无需手动选书；AI
+                根据用户兴趣与通勤、家务、睡前、亲子等场景智能推送，真正解放双眼，全场景陪伴。
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>深度知识陪伴</h3>
+              <p>
+                不止泛泛聊天，而是围绕樊登讲书的深度知识交互：听书 + 答疑 + 推荐一体化，在温和陪伴中轻松获取知识，让成长变得更高效。
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>全场景礼赠优选</h3>
+              <p>
+                国风颜值适配各类送礼场景，兼顾实用性与仪式感，是送长辈、送孩子、送亲友的知识好礼，让每一次赠予都充满心意。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 产品认证区 -->
+      <section class="section section-cert" id="certifications" aria-labelledby="cert-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="cert-title">权威认证 品质保障</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- 联系方式区 -->
+      <section class="section section-light" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="contact-info">
+            <h2 id="contact-title">联系我们</h2>
+            <div class="contact-block">
+              <h3>商务合作</h3>
+              <p>商务邮箱：fanshushengsheng@163.com</p>
+              <p>工作时间：周一至周五 09:30-18:00</p>
+            </div>
+            <div class="contact-social">
+              <div class="contact-social-title">关注我们</div>
+              <div class="contact-social-icons">
+                <div class="contact-social-item">
+                  <img src="./icon-wechat.png" alt="微信" />
+                  <div class="contact-social-qr">
+                    <img src="./qr-wechat.png" alt="微信二维码" />
+                  </div>
+                </div>
+                <div class="contact-social-item">
+                  <img src="./icon-douyin.png" alt="抖音" />
+                  <div class="contact-social-qr">
+                    <img src="./qr-douyin.png" alt="抖音二维码" />
+                  </div>
+                </div>
+                <div class="contact-social-item">
+                  <img src="./icon-xhs.png" alt="小红书" />
+                  <div class="contact-social-qr">
+                    <img src="./qr-xhs.png" alt="小红书二维码" />
+                  </div>
+                </div>
+                <div class="contact-social-item">
+                  <img src="./icon-weibo.png" alt="微博" />
+                  <div class="contact-social-qr">
+                    <img src="./qr-weibo.png" alt="微博二维码" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper" id="experience">
+            <h3>加入体验计划</h3>
+            <form id="experience-form" novalidate>
+              <div class="form-row">
+                <label for="name">姓名（必填）</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="请输入您的姓名"
+                />
+                <p class="form-error" data-error-for="name"></p>
+              </div>
+              <div class="form-row">
+                <label for="phone">手机号（必填）</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="请输入您的手机号"
+                />
+                <p class="form-error" data-error-for="phone"></p>
+              </div>
+              <div class="form-row">
+                <label for="city">所在城市（选填）</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="如：上海"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">
+                提交申请
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <p>© 2026 帆书 版权所有</p>
+          <p>沪ICP备XXXXXXXX号</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 提交反馈弹层 -->
+    <div class="toast" id="form-toast" role="status" aria-live="polite">
+      感谢申请，我们将在 3 个工作日内与您联系！
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
